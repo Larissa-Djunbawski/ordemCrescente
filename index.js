@@ -6,12 +6,15 @@ for (let i = 0; i < numeros.length; i++) {
       let auxiliar = numeros[i];
       numeros[i] = numeros[j];
       numeros[j] = auxiliar;
+    } else if(numeros[i]==numeros[j]){
+        numeros.splice(j,1)
+        j--
     }
   }
 }
 console.log(numeros);
 
-for (let i = 0; i < numeros.length; i++) {
+/*for (let i = 0; i < numeros.length; i++) {
   for (let j = i + 1; j < numeros.length; j++) {
     if (numeros[i] == numeros[j]) {
       numeros.splice(j, 1);
@@ -20,3 +23,4 @@ for (let i = 0; i < numeros.length; i++) {
   }
 }
 console.log(numeros);
+*/
